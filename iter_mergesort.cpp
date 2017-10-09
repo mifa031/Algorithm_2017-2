@@ -57,6 +57,8 @@ void mergeUnit(int arr[], int num, int unit) {
 	}
 
 	arrayCopy(tmp_arr, arr, num);
+	
+	free(tmp_arr);
 }
 
 void merge(int arr[], int res_arr[], int l_first_idx, int l_last_idx, int r_last_idx) {
