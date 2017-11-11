@@ -4,17 +4,17 @@
 #define ARR_SIZE 11
 
 void mergeSort(int arr[], int num); 
-/* arrÀ» ÀÌ¹Ì ¿ø¼Ò 1°³ ´ÜÀ§±îÁö ºĞÇÒµÈ ¹è¿­·Î º¸°í ÇÕº´Á¤·Ä ¼öÇà(ºĞÇÒ°úÁ¤ »ı·«) */
+/* arrì„ ì´ë¯¸ ì›ì†Œ 1ê°œ ë‹¨ìœ„ê¹Œì§€ ë¶„í• ëœ ë°°ì—´ë¡œ ë³´ê³  í•©ë³‘ì •ë ¬ ìˆ˜í–‰(ë¶„í• ê³¼ì • ìƒëµ) */
 void mergeUnit(int arr[], int num, int unit); 
-/* unit°³ ´ÜÀ§·Î arrÀ» ³ª´©°í 2°³ ´ÜÀ§¾¿À» ¹­¾î°¡¸ç merge() ÇÔ¼ö È£ÃâÇÏ¿© arr Á¤·Ä */
+/* unitê°œ ë‹¨ìœ„ë¡œ arrì„ ë‚˜ëˆ„ê³  2ê°œ ë‹¨ìœ„ì”©ì„ ë¬¶ì–´ê°€ë©° merge() í•¨ìˆ˜ í˜¸ì¶œí•˜ì—¬ arr ì •ë ¬ */
 void merge(int arr[], int res_arr[], int l_first_idx, int l_last_idx, int r_last_idx); 
-/* arrÀ» left/right µÎ ºÎºĞÀ¸·Î ³ª´² 2°³ÀÇ ¹è¿­·Î º¸°í mergeÇÏ¸é¼­ Á¤·ÄÇÏ¿© res_arr¿¡ ÀúÀå */
-void arrayCopy(const int src[], int dst[], int size); // ¹è¿­À» src¿¡¼­ dst·Î º¹»ç
+/* arrì„ left/right ë‘ ë¶€ë¶„ìœ¼ë¡œ ë‚˜ëˆ  2ê°œì˜ ë°°ì—´ë¡œ ë³´ê³  mergeí•˜ë©´ì„œ ì •ë ¬í•˜ì—¬ res_arrì— ì €ì¥ */
+void arrayCopy(const int src[], int dst[], int size); // ë°°ì—´ì„ srcì—ì„œ dstë¡œ ë³µì‚¬
 
 int ex_arr[ARR_SIZE] = { 3,4,11,1,2,9,7,10,8,6,5 };
 
 void main() {
-	printf("Á¤·Ä Àü : ");
+	printf("ì •ë ¬ ì „ : ");
 	for (int i = 0; i < ARR_SIZE; i++) {
 		printf("%d ", ex_arr[i]);
 	}
@@ -22,7 +22,7 @@ void main() {
 
 	mergeSort(ex_arr, ARR_SIZE);
 
-	printf("Á¤·Ä ÈÄ : ");
+	printf("ì •ë ¬ í›„ : ");
 	for (int i = 0; i < ARR_SIZE; i++) {
 		printf("%d ", ex_arr[i]);
 	}
